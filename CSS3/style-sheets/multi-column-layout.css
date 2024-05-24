@@ -1,0 +1,33 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+
+.container{
+ display:flex;
+ flex-direction: row;
+ justify-content:space-between;
+ margin: 0 auto;
+ max-width: 992px;
+ padding:20px;
+}
+
+.column{
+    /*flex-basis : 100%;*/
+    padding : 20px;
+    background-color: lightpink;
+    border: 1px solid black;
+}
+
+/*media queries*/
+@media (max-width:768px)
+{
+    .container{
+        flex-direction: column;
+    }
+
+    .column {
+        margin-bottom:20px;
+    }
+}
+

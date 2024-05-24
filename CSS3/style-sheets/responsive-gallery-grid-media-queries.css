@@ -1,0 +1,59 @@
+* {
+    margin:0 auto;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* line-height:10px;  */
+}
+
+header,footer{
+    background-color: lightseagreen;
+    color:black;
+    text-align: center;
+    padding: 1em,0;
+}
+
+main{
+    padding:5px;
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    gap:10px;
+    justify-content:center;
+    align-items:center;
+}
+
+.gallery-item{
+    overflow:hidden;
+}
+
+.gallery-item img{
+    width:300px;
+    height:auto;
+    display:block;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover{
+    transform:scale(1.1);
+}
+
+/* Media Queries */
+@media(min-width:576px)
+{
+    .gallery{
+        grid-template-columns: repeat(auto-fill,minmax(300px,1fr));
+    }
+}
+
+@media(min-width:768px)
+{
+    .gallery{
+        grid-template-columns: repeat(auto-fill,minmax(350px,1fr));
+    }
+} 

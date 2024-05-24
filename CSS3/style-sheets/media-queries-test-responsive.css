@@ -1,0 +1,129 @@
+*{
+   margin : 0 auto;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+    background-color: lightgray;
+}
+
+.box-container{
+    width: 992px;
+    padding:20px;
+    background-color: lightgreen;
+    border-radius:5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
+}
+
+h1{
+    text-align: center;
+}
+
+.boxes{
+    display:flex;
+    padding: 35px;
+    justify-content: space-around;
+}
+
+.box-item{
+    width:150px;
+    height:150px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    cursor:pointer;
+    border-radius:8px;
+}
+
+#bg-color-1 {
+    background-color: red;
+   }
+   
+#bg-color-2 {
+    background-image: url(../images-folder/bg-image-1.avif);
+    background-size: cover;
+    background-position: center;
+}
+   
+#bg-color-3 {
+    background-image: linear-gradient(to right,#2596be,#6b170d);
+}
+   
+#bg-color-4 {
+    background-image:url(../images-folder/bg-image-2.avif) ;
+    background-size: cover;
+    background-position: center;
+}
+
+/*media queries*/
+/*For medium screens*/
+@media only screen and (max-width:768px) {
+    body{
+        background-color: orange;
+    }
+
+    h1{
+        /*text-align: center;*/
+        padding-left:20px;
+    }
+
+    .box-container{
+        background-color: darkblue;
+        display:flex;
+        flex-wrap:wrap;
+        width:100%;
+    }
+
+    .boxes{
+        margin:20px;
+        display:flex;
+        flex-wrap:wrap;
+        width:90%;
+        /*flex-direction:column;*/
+    }
+
+    .box-item{
+        /*width:50%;*/
+        margin:10px;
+        flex:calc(40%);
+    }
+}
+
+/*For small screens*/
+@media only screen and (max-width:576px) {
+    body{
+        background-color: maroon;
+    }
+
+    h1{
+        /*text-align: center;*/
+        padding-left:30px;
+    }
+
+    .box-container{
+         background-color: purple;
+    }
+    .boxes{
+        margin:20px;
+        width:100%;
+        margin-left:50px;
+        height:auto;
+        justify-content:center;
+        align-items: center;
+    }
+    .box-item{
+        width:20%;
+        height:auto;
+        padding: 100px;
+        display:flex;
+        font-size: 16px;
+        font-weight: bold;
+        cursor:pointer;
+        border-radius:8px;
+    }  
+}
+

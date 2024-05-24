@@ -1,0 +1,11 @@
+.box-model{
+    width:200px;
+    height: 200px;
+    background-color: lightcoral;
+    color: darkblue;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border:2px solid darkgreen;
+    box-sizing: border-box;
+}

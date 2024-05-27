@@ -1,0 +1,31 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+    margin:0;
+    width:100%;
+    background-color: aquamarine;
+}
+
+.box{
+    width:100px;
+    height:100px;
+    background-color: antiquewhite;
+    display:flex;
+    text-align:center;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    animation: moveBox 7s infinite linear;
+}
+
+@keyframes moveBox {
+   from {
+        left : 0%;
+    }
+
+    to {
+        left : 100%;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="survey-form.css" />
+  </head>
+  <body>
+    <form name="frm" method="get" action="#">
+      <table border="1px">
+        <caption>
+          Please fill in your details below for the survey form
+        </caption>
+        <tr>
+          <td>Name</td>
+          <td><input type="text" name="name" value="" required /></td>
+        </tr>
+
+        <tr>
+          <td>Age</td>
+          <td><input type="number" name="age" value="" required /></td>
+        </tr>
+
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="email" value="" required /></td>
+        </tr>
+
+        <tr>
+          <td>Do you own a car?</td>
+          <td>
+            <input type="radio" name="yesOption" value="yes" /> Yes
+            <input type="radio" name="noOption" value="no" /> No
+          </td>
+        </tr>
+
+        <tr>
+          <td>Car Make</td>
+          <td>
+            <select name="carMake">
+              <option value="">Choose Manufactured Country</option>
+              <option value="india">India</option>
+              <option value="uae">UAE</option>
+              <option value="china">China</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Car Model</td>
+          <td><input type="text" name="model" value="" required /></td>
+        </tr>
+
+        <tr>
+          <td>How Often Do You Drive?</td>
+          <td>
+            <select name="cardrive">
+              <option value="">How Frequently?</option>
+              <option value="india">Daily</option>
+              <option value="uae">Weekly</option>
+              <option value="china">Monthly</option>
+              <option value="china">Yearly</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <td>What is your Primary Purpose of Driving?</td>
+          <td>
+            <input type="checkbox" name="driving[]" value="work" /> Work
+            <input type="checkbox" name="driving[]" value="leisure" /> Leisure
+            <input type="checkbox" name="driving[]" value="other" /> Other
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="2">
+            <!-- <input type="submit" name="submit" value="SUBMIT" /> -->
+            <button type="submit">Submit</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
